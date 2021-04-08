@@ -11,11 +11,6 @@ const controls = [
 ]
 
 const buildControls = (props) => {
-    // Function to disable the order now button
-    let disabled = false;
-    if(props.price === 4){
-        disabled = true;
-    }
 
     return (
         <div className={classes.BuildControls}>
@@ -31,7 +26,7 @@ const buildControls = (props) => {
             
             <button 
                 className={classes.OrderButton} 
-                disabled={disabled}
+                disabled={!props.purchasable}
                 onClick={props.ordered}>ORDER NOW</button>
         </div>
      );
