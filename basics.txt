@@ -223,3 +223,8 @@ means that if arrays have inner arrays we want to creatae one big array of all
 
 go to video 147
 if shows in logo how diffrent classes of same name and same component would be treated difrently by react 
+
+we can add lifecycle methods only in class based components
+we can save performance by chacking components that are unnececerily rerendered and then handling that
+
+to improve performance , we used shouldComponentUpdate so, the component only updates under a certain condition
